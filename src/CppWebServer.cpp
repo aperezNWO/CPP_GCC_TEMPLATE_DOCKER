@@ -7,7 +7,7 @@
     g++ -std=c++17 -O3 CppWebServer.cpp -o cpp_web_server.exe -mconsole -lws2_32
 
     g++ -std=c++23  -static -static-libgcc -static-libstdc++ -o cpp_web_server.exe CppWebServer.cpp Algorithm.cpp tesseractDll.cpp -I"include"  -L"lib" -ltesseract55 -lleptonica              -lcurl -larchive -ltiff -lwebp -lsharpyuv -lgif -lopenjp2 -lssl -lcrypto -lpng -ljpeg -lz -lbz2 -llzma -llz4 -lzstd -lws2_32 -lbcrypt -lcrypt32 -mconsole -m64 
-    
+  
     // LINUX -- DOCKER (NO .EXE EXTENSION FOR DOCKER!!!)
     	// EDIT DOCKER FILE TO ADD NEEDED FILES
 	
