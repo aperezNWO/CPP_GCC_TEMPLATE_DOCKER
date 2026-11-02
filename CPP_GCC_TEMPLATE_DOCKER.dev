@@ -1,5 +1,5 @@
 [Project]
-filename=CPP_GCC_TESSERACT_DOCKER.dev
+filename=CPP_GCC_TEMPLATE_DOCKER.dev
 name=CPP_GCC_TESSERACT_DOCKER
 Type=1
 Ver=2
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0
-UnitCount=28
+UnitCount=27
 
 [VersionInfo]
 Major=1
@@ -139,15 +139,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=src\lib\libtesseract55.dll
-Folder=src/lib
-Compile=0
-Link=0
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit13]
 FileName=src\include\Algorithm.h
 Folder=src/include
 Compile=1
@@ -157,16 +148,17 @@ OverrideBuildCmd=0
 BuildCmd=
 CompileCpp=1
 
-[Unit18]
-FileName=src\__dist\tesseract.dll
-Folder=src/__dist
-Compile=0
-Link=0
+[Unit13]
+FileName=src\Algorithm.cpp
+Folder=src
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
 
-[Unit19]
+[Unit18]
 FileName=src\__dist\tesseract.ini
 Folder=src/__dist
 Compile=0
@@ -175,7 +167,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit20]
+[Unit19]
 FileName=src\__dist\tessdata\eng.traineddata
 Folder=src/__dist/tessdata
 Compile=0
@@ -184,7 +176,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit21]
+[Unit20]
 FileName=src\__test\cpp_web_server.exe
 Folder=src/__test
 Compile=0
@@ -193,7 +185,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit22]
+[Unit21]
 FileName=src\__test\Input.png
 Folder=src/__test
 Compile=0
@@ -202,17 +194,16 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit24]
-FileName=src\__test\tesseract.dll
+[Unit22]
+FileName=src\__test\ocr_dll_test.exe
 Folder=src/__test
 Compile=0
 Link=0
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
-CompileCpp=1
 
-[Unit25]
+[Unit24]
 FileName=src\__test\tesseract.ini
 Folder=src/__test
 Compile=0
@@ -222,10 +213,20 @@ OverrideBuildCmd=0
 BuildCmd=
 CompileCpp=1
 
-[Unit26]
+[Unit25]
 FileName=src\__test\tessdata\eng.traineddata
-CompileCpp=1
 Folder=src/__test/tessdata
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+CompileCpp=1
+
+[Unit26]
+FileName=src\input.png
+CompileCpp=1
+Folder=src
 Compile=0
 Link=0
 Priority=1000
@@ -233,9 +234,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit27]
-FileName=src\input.png
+FileName=src\tessdata\eng.traineddata
 CompileCpp=1
-Folder=src
+Folder=src/tessdata
 Compile=0
 Link=0
 Priority=1000
@@ -262,17 +263,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit11]
-FileName=src\lib\libtesseract55.a
-Folder=src/lib
-Compile=0
-Link=0
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit23]
-FileName=src\__test\ocr_dll_test.exe
+FileName=src\__test\tesseract.dll
 CompileCpp=1
 Folder=src/__test
 Compile=0
@@ -282,16 +274,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit14]
-FileName=src\Algorithm.cpp
-CompileCpp=1
-Folder=src
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit15]
 FileName=src\include\tesseractApp.h
 CompileCpp=1
 Folder=src/include
@@ -301,7 +283,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit16]
+[Unit15]
 FileName=src\tesseractApp.cpp
 CompileCpp=1
 Folder=src
@@ -311,9 +293,28 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit17]
+[Unit16]
 FileName=src\__dist\Input.png
+CompileCpp=1
 Folder=src/__dist
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit17]
+FileName=src\__dist\tesseract.dll
+Folder=src/__dist
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit11]
+FileName=src\lib\libtesseract55.dll
+Folder=src/lib
 Compile=0
 Link=0
 Priority=1000
